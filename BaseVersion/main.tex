@@ -72,8 +72,8 @@
 \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
 \newenvironment{highlights}{
     \begin{itemize}[
-        topsep=0.10 cm,
-        parsep=0.10 cm,
+        topsep=0.03 cm,
+        parsep=0.03 cm,
         partopsep=0pt,
         itemsep=0pt,
         leftmargin=0 cm + 10pt
@@ -192,12 +192,11 @@
         }
         \textbf{Software Engineer (remote)}, University of Essex --- Colchester, UK\end{twocolentry}
 
-        \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
             \item Built a C\# AI-powered data collection system integrating Mistral LLM and Microsoft Power Platform, designed to store, validate and analyze operational data, replacing the manual spread-sheet process.
             \item Created LLM-driven data extraction and summarization pipelines to convert unstructured field inputs into structured datasets for downstream analytics and compliance.
-            \item Delivered CI/CD pipelines for an AI-generated + human-reviewed codebase, automating GitHub and Vercel deployments and enabling weekly releases with lower engineering overhead and higher deployment reliability..
+            \item Delivered CI/CD pipelines for an AI-generated + human-reviewed codebase, automating GitHub and Vercel deployments and enabling weekly releases with lower engineering overhead and higher deployment reliability.
 
             \end{highlights}
         \end{onecolentry}
@@ -206,9 +205,12 @@
         }
         \textbf{Software Engineer (part-time)}, UK Data Service --- Colchester, UK\end{twocolentry}
 
-        \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
+
+            \item Developed Python and Javascript MCP applications using fine-tuned Hugging Face LLMs (via vLLM and Ollama) to automate data validation, disclosure risk checking, and metadata enrichment, allowing non-technical analysts to process complex datasets independently.
+            \item Built end-to-end AI systems for automated metadata classification and statistical disclosure control, deployed on AWS (Lambda, Step Functions, EFS) and Docker, enabling secure, scalable processing of sensitive social-science datasets.
+            \item Refactored and optimised statistical disclosure control algorithms from R to C++, using bitmask-based techniques to dramatically improve runtime performance and scalability for large datasets.
               % \item Developed end-to-end ML systems for automated metadata control and classification, deployed via AWS (Lambda, Step Functions, EFS) and Docker for robust security and scalability.
             % \item Developed end-to-end Machine Learning classification systems in scikit-learn and PyTorch for automated metadata control deployed on AWS, with Docker to ensure security and scalability.
             % \item Optimized C++ statistical disclosure control algorithms using bitmasks, improving runtime efficiency.
@@ -217,7 +219,7 @@
             % \item Design and implementation of the Data Pipelines 
               % \item Worked on the development of Model Context Protocol (MCP) applications to automate data retrieval and classification pipelines.
               % \item Designed and programmed Python applications with locally hosted Large Language Models to ensure data integrity and security using vLLM and Ollama inference engines.
-            \item Developed Python applications integrating locally hosted fine-tuned LLMs using Hugging Face Transformers, which automate the data processing and checking pipeline conducted by non-technical people.
+            % \item Developed Python applications integrating locally hosted fine-tuned LLMs using Hugging Face Transformers, which automate the data processing and checking pipeline conducted by non-technical people.
             % \item Designed and programmed Python applications with locally hosted Large Language Models, which made the study household disclosure risk analysis process more transparent and interactive.
               % \item Worked on the refactoring of the legacy Java-based code.
               % \item Assisted in creating the full-stack JavaScript React applications for internal use to update the existing systems for reading checking social sciences data sets.
@@ -228,36 +230,41 @@
         \end{onecolentry}
 
 
-        \vspace{0.2 cm}
+        % \vspace{0.2 cm}
 
         \begin{twocolentry}{
             Oct 2021 --- Dec 2022
         }
             \textbf{Research Officer and Laboratory Assistant}, University of Essex --- Colchester, UK\end{twocolentry}
 
-        \vspace{0.10 cm}
+        % \vspace{0.10 cm}
         \begin{onecolentry}
             \begin{highlights}
-            \item Applied statistical and Machine Learning regression models to solve theoretical macroeconomic problem.
-                  %\item Formulated and optimized mathematical problems in theoretical macroeconomic models.
-                  \item Developed a program to simulate macroeconomic processes, written in the C programming language for speed and scalability.
-                  \item Assisted in teaching C/C++, Data Structures \& Algorithms, and Introductory Machine Learning modules at postgraduate level.
+            \item Assisted in analytical solution of the quantitative macroeconomic model, in collaboration with academics from the University of Oslo and MIT;
+            \item Translated research models from MATLAB and Python into high-performance C++, enabling faster, more scalable macroeconomic simulations suitable for large scenario sweeps and experimentation.
+            \item Taught and mentored students in Data Structures \& Algorithms, C/C++, and Machine Learning at undergraduate and postgraduate level.
+            % \item Applied statistical and Machine Learning regression models to solve theoretical macroeconomic problem.
+            %       %\item Formulated and optimized mathematical problems in theoretical macroeconomic models.
+            %       \item Developed a program to simulate macroeconomic processes, written in the C programming language for speed and scalability.
+            %       \item Assisted in teaching C/C++, Data Structures \& Algorithms, and Introductory Machine Learning modules at postgraduate level.
             \end{highlights}
         \end{onecolentry}
     
-        \vspace{0.2 cm}
+        % \vspace{0.2 cm}
 
         \begin{twocolentry}{
             May 2020 --- Sep 2020
         }
             \textbf{Analyst Intern}, Beyond Borders Investment Strategies --- Boston, MA, USA\end{twocolentry}
 
-            \vspace{0.10 cm}
+            % \vspace{0.10 cm}
             \begin{onecolentry}
                 \begin{highlights}
-                \item Performed quantitative analysis of exposure of international Exchange Traded Funds (ETFs) to currency and commodity prices fluctuations, using time-series analysis techniques.
-                \item Proposed ideas for mitigation of currency risks via financial derivatives.
-                \item Developed a Java application for parsing the pdf documents to the .csv format, using SpringBoot and JavaFX, automating previously manual process.
+                \item Performed time-series and econometric analysis to quantify ETF exposure to currency and commodity price movements.
+                \item Developed a Java application to automatically extract financial data from PDFs into CSV format, replacing a fully manual workflow.
+                % \item Performed quantitative analysis of exposure of international Exchange Traded Funds (ETFs) to currency and commodity prices fluctuations, using time-series analysis techniques.
+                % \item Proposed ideas for mitigation of currency risks via financial derivatives.
+                % \item Developed a Java application for parsing the pdf documents to the .csv format, using SpringBoot and JavaFX, automating previously manual process.
                 \end{highlights}
             \end{onecolentry}
 
@@ -268,9 +275,9 @@
 
         \begin{highlights}
         
-            \item The Optical Character Recognition (OCR) project, which scans the photos of Magic the Gathering (MTG) cards and outputs the information about a card along with its most up-to-date price on the secondary market. 
-            \item The backend API is written in the Python and the C++ programming languages, using a PostgreSQL database and is hosted on the Raspberry Pi server.
-            \item The frontend is written in the Javascipt with the use Vite framework.
+            \item The Optical Character Recognition (OCR) project, which scans the photos of Magic the Gathering (MTG) cards and outputs the information about a card along with its most up-to-date price on the secondary market serving roughly 50 users daily. 
+            \item The backend API is written in the Python and the C++ programming languages, using a PostgreSQL database and is hosted on the Raspberry Pi server, with frontend written in Javascipt.
+            % \item The frontend is written in the Javascipt with the use Vite framework.
         \end{highlights}
     \end{onecolentry}
 
@@ -281,7 +288,7 @@
         \begin{highlights}
         
             \item A wrapper around the scikit-learn and statsmodels Python packages to compute the weighted average of models, for time-series data forecasting. 
-            \item Uses the C programming language functions to optimize the runtime of the package.
+            % \item Uses the C programming language functions to optimize the runtime of the package.
         \end{highlights}
     \end{onecolentry}
 
@@ -294,8 +301,14 @@
 
         % \vspace{0.20 cm}
             \begin{highlights}
-            % \item Developed the Transfer Learning-based Bayesian Averaging framework for modeling future fundamental financial variables.
-            \item The project GitHub repo was forked by other open-source enthusiasts, used for further development of financial applications.
+            \item Developed a transfer-learning-based Bayesian model averaging framework to forecast fundamental financial variables, quantitative models for improved predictive performance.
+
+            \item Built an open-source financial processing package adopted and forked by external developers.
+
+            \item Published peer-reviewed papers in international AI conferences and scientific journals on my the thesis project.           
+
+        % \item Developed the Transfer Learning-based Bayesian Averaging framework for modeling future fundamental financial variables.
+            % \item The project GitHub repo was forked by other open-source enthusiasts, used for further development of financial applications.
         % %     \item Created JavaScript application to interactively demonstrate the outcomes of the PhD project.
         %     % \item Led workshops on Linux, Software Development Principles and Dev Tooling.
         %         % \item Led internal seminars on applications of ML techniques to finance.
@@ -313,7 +326,8 @@
         % % \vspace{0.10 cm}
         %  \begin{onecolentry}
              \begin{highlights}
-             \item Developed a C++ application to simulate the behaviour of banks, households, and firms under dynamic and negative interest rates, based on the article from a scientific journal;
+             \item Built a C++ agent-based financial simulation modelling banks, households, and firms under dynamic and negative interest-rate regimes, based on peer-reviewed economic research.
+             % \item Developed a C++ application to simulate the behaviour of banks, households, and firms under dynamic and negative interest rates, based on the article from a scientific journal;
         %      % \item Built a simulation to model the behaviour of banks, households, and firms under dynamic and negative interest rates in the C programming language, compiled using Clang in a Docker container for better experiments reproducibility.
              \end{highlights}
         %  \end{onecolentry}
