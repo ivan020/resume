@@ -1,4 +1,4 @@
-\documentclass[10pt, letterpaper]{article}
+\documentclass[6pt, letterpaper]{article}
 
 % Packages:
 \usepackage[
@@ -66,7 +66,7 @@
     0.3 cm
 }{
     % bottom space:
-    0.2 cm
+    0.1 cm
 } % section title spacing
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
@@ -160,9 +160,9 @@
     \sbox\ANDbox{$|$}
 
     \begin{header}
-        \fontsize{25 pt}{25 pt}\selectfont Ivan Evdokimov, Ph.D.
+        \fontsize{15 pt}{15 pt}\selectfont Ivan Evdokimov, Ph.D.
 
-        \vspace{5 pt}
+        \vspace{1 pt}
 
         \normalsize
         \mbox{Manchester, UK}%
@@ -180,55 +180,96 @@
         \mbox{\hrefWithoutArrow{https://github.com/ivan020}{github.com/ivan020}}%
     \end{header}
 
-    \vspace{5 pt - 0.3 cm}
+    % \vspace{5 pt - 0.3 cm}
+    \vspace{5pt}
 
 
     \section{Professional Summary}
     Software Engineer with 4+ years deploying enterprise-scale ML and GenAI solutions into production. Expert in building end-to-end MLOps pipelines with model governance, drift detection, and automated retraining on AWS. Proven track record of working in diverse multi-national teams and taking AI models from experimentation to production, processing sensitive social sciences datasets with 95\%+ accuracy while ensuring scalable deployment.
 
+
     \section{Experience}
 
-        
-        \begin{twocolentry}{
-            Nov 2025 --- Present
-        }
-        \textbf{Software Engineer (Machine Learning)}, University of Essex --- Colchester, UK\end{twocolentry}
+        \begin{twocolentry}{Nov 2025 --- Present}
+        \textbf{Software Engineer – ML}, University of Essex --- Colchester, UK
+        \end{twocolentry}
 
         \begin{onecolentry}
-            \begin{highlights}
+        \begin{highlights}
             \item Architected production-grade CI/CD pipeline for AI-powered development workflow using GitHub Actions, and Vercel, enabling automated deployment of codebases with 90\%+ code generation rate and weekly release cycles.
             \item Designed automated testing and quality assurance framework adapted for AI-generated code, implementing validation pipelines that reduced manual code review time by 70\% while maintaining production stability and security standards.
             \item Developed end-to-end MLOps infrastructure for multi-tenant SaaS platform serving global B2B companies, reducing engineering overhead by 60\% and accelerating feature delivery from monthly to weekly releases through AI-driven development automation.
-
-            \end{highlights}
+            \item Deployed the Java application using Maven-framework for a gearswitch company to digitise the process of reporting of the installation asset examination with integrated LLM support for summarisation of the report content.
+        \end{highlights}
         \end{onecolentry}
-        \begin{twocolentry}{
-            Jan 2023 --- Oct 2025
-        }
-        \textbf{Software Engineer (Machine Learning)}, UK Data Service --- Colchester, UK\end{twocolentry}
+
+        \begin{twocolentry}{Jan 2023 --- Oct 2025}
+        \textbf{Software Engineer – ML}, UK Data Service --- Colchester, UK
+        \end{twocolentry}
 
         \begin{onecolentry}
-            \begin{highlights}
+        \begin{highlights}
+
             \item Trained, fine-tuned, and deployed domain-specific GenAI, scikit-learn and PyTorch models, and model hierarchies using Hugging Face, vLLM, and Ollama for automated metadata classification and disclosure risk assessment, achieving 95\%+ accuracy on sensitive social science datasets.
             \item Designed serverless ML infrastructure on AWS (Lambda, Step Functions, EFS) with automated model retraining pipelines, reducing manual data validation workload by 50\% and enabling non-technical staff to process complex datasets independently.
             \item Optimized statistical disclosure control algorithms by migrating from R to C++ using bitmask techniques, achieving 11x performance improvement and enabling real-time processing of datasets with 500k+ records.
-
-            \end{highlights}
+        \end{highlights}
         \end{onecolentry}
 
-        \begin{twocolentry}{
-            Oct 2021 --- Dec 2022
-        }
-            \textbf{Research Officer and ML Instructor}, University of Essex --- Colchester, UK\end{twocolentry}
+        \begin{twocolentry}{Oct 2021 --- Dec 2022}
+        \textbf{Research Officer \& ML Instructor}, University of Essex --- Colchester, UK
+        \end{twocolentry}
 
         \begin{onecolentry}
-            \begin{highlights}
-
-            \item Migrated quantitative macroeconomic models from MATLAB to C++, reducing simulation runtime by 8x for academic research collaboration with MIT and University of Oslo.
-            \item Taught Data Structures \& Algorithms, C/C++, and Machine Learning to 100+ undergraduate and postgraduate students.
-
-            \end{highlights}
+        \begin{highlights}
+        \item Migrated quantitative macroeconomic models from MATLAB to C++, reducing simulation runtime 8x for collaborations with MIT and University of Oslo.
+        \item Taught Data Structures, C/C++, and ML to 100+ undergrad/postgrad students.
+        \end{highlights}
         \end{onecolentry}
+
+    % \section{Experience}
+    %
+    %
+    %     \begin{twocolentry}{
+    %         Nov 2025 --- Present
+    %     }
+    %     \textbf{Software Engineer (Machine Learning)}, University of Essex --- Colchester, UK\end{twocolentry}
+    %
+    %     \begin{onecolentry}
+    %         \begin{highlights}
+    %         \item Architected production-grade CI/CD pipeline for AI-powered development workflow using GitHub Actions, and Vercel, enabling automated deployment of codebases with 90\%+ code generation rate and weekly release cycles.
+    %         \item Designed automated testing and quality assurance framework adapted for AI-generated code, implementing validation pipelines that reduced manual code review time by 70\% while maintaining production stability and security standards.
+    %         \item Developed end-to-end MLOps infrastructure for multi-tenant SaaS platform serving global B2B companies, reducing engineering overhead by 60\% and accelerating feature delivery from monthly to weekly releases through AI-driven development automation.
+    %
+    %         \end{highlights}
+    %     \end{onecolentry}
+    %     \begin{twocolentry}{
+    %         Jan 2023 --- Oct 2025
+    %     }
+    %     \textbf{Software Engineer (Machine Learning)}, UK Data Service --- Colchester, UK\end{twocolentry}
+    %
+    %     \begin{onecolentry}
+    %         \begin{highlights}
+    %         \item Trained, fine-tuned, and deployed domain-specific GenAI, scikit-learn and PyTorch models, and model hierarchies using Hugging Face, vLLM, and Ollama for automated metadata classification and disclosure risk assessment, achieving 95\%+ accuracy on sensitive social science datasets.
+    %         \item Designed serverless ML infrastructure on AWS (Lambda, Step Functions, EFS) with automated model retraining pipelines, reducing manual data validation workload by 50\% and enabling non-technical staff to process complex datasets independently.
+    %         \item Optimized statistical disclosure control algorithms by migrating from R to C++ using bitmask techniques, achieving 11x performance improvement and enabling real-time processing of datasets with 500k+ records.
+    %
+    %         \end{highlights}
+    %     \end{onecolentry}
+    %
+    %     \begin{twocolentry}{
+    %         Oct 2021 --- Dec 2022
+    %     }
+    %         \textbf{Research Officer and ML Instructor}, University of Essex --- Colchester, UK\end{twocolentry}
+    %
+    %     \begin{onecolentry}
+    %         \begin{highlights}
+    %
+    %         \item Migrated quantitative macroeconomic models from MATLAB to C++, reducing simulation runtime by 8x for academic research collaboration with MIT and University of Oslo.
+    %         \item Taught Data Structures \& Algorithms, C/C++, and Machine Learning to 100+ undergraduate and postgraduate students.
+    %
+    %         \end{highlights}
+    %     \end{onecolentry}
     
 
         % \begin{twocolentry}{
@@ -253,9 +294,8 @@
         \textbf{FinBot: Chat-Based Trading Simulation} \hfill github.com/ivan020/FinBot
 
         \begin{highlights}
-        \item Built a real-time trading simulation chatbot in Go that integrates with Twitch and Kick chat, allowing users to execute simulated stock trades via chat commands.
-        \item Designed and implemented a backend API to process trade requests and persist portfolio data in a PostgreSQL database (Supabase).
-        \item Developed a JavaScript-based web UI to visualize and track portfolio performance in real time.
+            \item Built a real-time trading simulation chatbot in Go integrated with Twitch chat, with a backend API recording stock purchases in PostgreSQL (Supabase).
+            \item Developed a JavaScript UI hosted online to visualize and track portfolio performance in real time with interactive graphs and table.        
         \end{highlights}
     \end{onecolentry}
 
@@ -263,43 +303,66 @@
         \textbf{MTG Card Reader} \hfill ivan020.github.io/MtgRecognizer/
 
         \begin{highlights}
-        \item Built and deployed an OCR pipeline using Python (FastAPI), C++, and PostgreSQL on a Raspberry Pi to recognize Magic: The Gathering cards.
-        \item Designed a C++ lightweight backend capable of serving 50+ daily users with low-latency responses.
-        \item Developed a JavaScript-based web UI hosted on Vercel to allow users to upload images and view recognition results in real time.
+            \item Built and deployed an OCR pipeline on Raspberry Pi (Python FastAPI, C++, PostgreSQL) achieving 97\%+ card recognition F1 score with low-latency backend for 50+ daily users.
+            \item Developed a JavaScript web UI hosted on Vercel to upload images and view recognition results in real time.
         \end{highlights}
     \end{onecolentry}
 
-    \begin{onecolentry}
-        \textbf{BWA: Bayesian Weighted Model Averaging} \hfill github.com/ivan020/transferLearningForecasting
+    % \begin{onecolentry}
+    %     \textbf{BWA: Bayesian Weighted Model Averaging} \hfill github.com/ivan020/transferLearningForecasting
+    %
+    %     \begin{highlights}
+    %         \item Developed a Python library extending scikit-learn for Bayesian model averaging to combine multiple models and improve time-series forecasting in a sample with limited number of observations.
+    %         \item Achieved 16\% improvement over baseline models; results published in a peer-reviewed journal.
+    %     \end{highlights}
+    % \end{onecolentry}
 
-        \begin{highlights}
-        \item Developed a Python library extending scikit-learn to implement Bayesian model averaging for time-series forecasting.
-        \item Designed a wrapper framework to combine multiple models and improve predictive robustness across datasets.
-        \item Achieved a 16\% improvement in forecasting accuracy over baseline models, with results published in a peer-reviewed scientific journal.
-        \end{highlights}
-    \end{onecolentry}
+
 
     \section{Education}
 
-        \begin{twocolentry}{
-            Oct 2021 --- May 2025
-        }
-        \textbf{University of Essex}, PhD in Computational Finance\end{twocolentry}
+            \begin{twocolentry}{
+                Oct 2021 --- May 2025
+            }
+            \textbf{University of Essex}, PhD in Computational Finance
+            \end{twocolentry}
 
-        % \vspace{0.20 cm}
             \begin{highlights}
+            \item Developed PyTorch-based transfer learning framework for Bayesian model averaging in financial forecasting; published peer-reviewed papers and released open-source package adopted externally.
+            \end{highlights}
 
-            \item Developed transfer learning framework using PyTorch for Bayesian model averaging to forecast financial variables, published peer-reviewed conference papers at international AI conferences (INNS), and released open-source forecasting package adopted by external research teams.
-             \end{highlights}
+            \begin{twocolentry}{
+                Oct 2020 --- Sep 2021
+            }
+            \textbf{University of Essex}, MSc in Financial Econometrics
+            \end{twocolentry}
 
-        \begin{twocolentry}{
-            Oct 2020 --- Sep 2021 
-        }
-            \textbf{University of Essex}, MSc in Financial Econometrics\end{twocolentry}
+            \begin{highlights}
+            \item Built C++ agent-based financial simulation modeling macroeconomic dynamics under negative interest rates.
+            \end{highlights}
 
-             \begin{highlights}
-             \item Built agent-based financial simulation in C++ modeling macroeconomic dynamics under negative interest rates, based on peer-reviewed research.
-             \end{highlights}
+    % \section{Education}
+    %
+    %     \begin{twocolentry}{
+    %         Oct 2021 --- May 2025
+    %     }
+    %     \textbf{University of Essex}, PhD in Computational Finance\end{twocolentry}
+    %
+    %     % \vspace{0.20 cm}
+    %         \begin{highlights}
+    %
+    %         \item Developed transfer learning framework using PyTorch for Bayesian model averaging to forecast financial variables, published peer-reviewed conference papers at international AI conferences (INNS), and released open-source forecasting package adopted by external research teams.
+    %          \end{highlights}
+    %
+    %     \begin{twocolentry}{
+    %         Oct 2020 --- Sep 2021 
+    %     }
+    %         \textbf{University of Essex}, MSc in Financial Econometrics\end{twocolentry}
+    %
+    %          \begin{highlights}
+    %          \item Built agent-based financial simulation in C++ modeling macroeconomic dynamics under negative interest rates, based on peer-reviewed research.
+    %          \end{highlights}
+    %
         %  \end{onecolentry}
 
 
