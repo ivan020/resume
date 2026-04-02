@@ -160,7 +160,7 @@
     \sbox\ANDbox{$|$}
 
     \begin{header}
-        \fontsize{25 pt}{25 pt}\selectfont Ivan Evdokimov%, Ph.D.
+        \fontsize{25 pt}{25 pt}\selectfont Ivan Evdokimov, Ph.D.
 
         \vspace{5 pt}
 
@@ -250,24 +250,32 @@
     \section{Projects}
 
     \begin{onecolentry}
-        \textbf{MTG: Cards Reader: ivan020.github.io/MtgRecognizer/}
+        \textbf{FinBot: Chat-Based Trading Simulation} \hfill github.com/ivan020/FinBot
 
         \begin{highlights}
-
-        \item Deployed OCR pipeline using Python (FastAPI), C++, and PostgreSQL on Raspberry Pi with EasyOCR, optimized through quantization and lazy loading, achieving 95\%+ recognition accuracy while serving 50+ daily users on resource-constrained hardware, with low lantency.
-
+        \item Built a real-time trading simulation chatbot in Go that integrates with Twitch and Kick chat, allowing users to execute simulated stock trades via chat commands.
+        \item Designed and implemented a backend API to process trade requests and persist portfolio data in a PostgreSQL database (Supabase).
+        \item Developed a JavaScript-based web UI to visualize and track portfolio performance in real time.
         \end{highlights}
     \end{onecolentry}
 
-
     \begin{onecolentry}
-        \textbf{BWA: Bayesian Weighted Model Averaging}
+        \textbf{MTG Card Reader} \hfill ivan020.github.io/MtgRecognizer/
 
         \begin{highlights}
-        
-        \item Developed scikit-learn wrapper implementing Bayesian model averaging for time-series forecasting, achieving 7\% improvement in prediction accuracy over the benchmark model, as is documented in the peer-reviewed scientific journal.
-            % \item A wrapper around the scikit-learn and statsmodels Python packages to compute the weighted average of models, for time-series data forecasting. 
-            % \item Uses the C programming language functions to optimize the runtime of the package.
+        \item Built and deployed an OCR pipeline using Python (FastAPI), C++, and PostgreSQL on a Raspberry Pi to recognize Magic: The Gathering cards.
+        \item Designed a C++ lightweight backend capable of serving 50+ daily users with low-latency responses.
+        \item Developed a JavaScript-based web UI hosted on Vercel to allow users to upload images and view recognition results in real time.
+        \end{highlights}
+    \end{onecolentry}
+
+    \begin{onecolentry}
+        \textbf{BWA: Bayesian Weighted Model Averaging} \hfill github.com/ivan020/transferLearningForecasting
+
+        \begin{highlights}
+        \item Developed a Python library extending scikit-learn to implement Bayesian model averaging for time-series forecasting.
+        \item Designed a wrapper framework to combine multiple models and improve predictive robustness across datasets.
+        \item Achieved a 16\% improvement in forecasting accuracy over baseline models, with results published in a peer-reviewed scientific journal.
         \end{highlights}
     \end{onecolentry}
 
@@ -282,35 +290,15 @@
             \begin{highlights}
 
             \item Developed transfer learning framework using PyTorch for Bayesian model averaging to forecast financial variables, published peer-reviewed conference papers at international AI conferences (INNS), and released open-source forecasting package adopted by external research teams.
-            % \item Developed a transfer-learning-based Bayesian model averaging framework to forecast fundamental financial variables, quantitative models for improved predictive performance.
-            %
-            % \item Built an open-source financial processing package adopted and forked by external developers.
-            %
-            % \item Published peer-reviewed papers in international AI conferences and scientific journals on my the thesis project.           
-
-        % \item Developed the Transfer Learning-based Bayesian Averaging framework for modeling future fundamental financial variables.
-            % \item The project GitHub repo was forked by other open-source enthusiasts, used for further development of financial applications.
-        % %     \item Created JavaScript application to interactively demonstrate the outcomes of the PhD project.
-        %     % \item Led workshops on Linux, Software Development Principles and Dev Tooling.
-        %         % \item Led internal seminars on applications of ML techniques to finance.
-        %         % \item Facilitated pair programming sessions with fellow PhD-students on projects in GANs, Reinforcement Learning, Genetic Programming, etc.
-        %         \item Published three papers in international AI conferences and scientific journals.
              \end{highlights}
-        %  \end{onecolentry}
-        % ~
-        % ~
+
         \begin{twocolentry}{
             Oct 2020 --- Sep 2021 
         }
             \textbf{University of Essex}, MSc in Financial Econometrics\end{twocolentry}
 
-        % % \vspace{0.10 cm}
-        %  \begin{onecolentry}
              \begin{highlights}
              \item Built agent-based financial simulation in C++ modeling macroeconomic dynamics under negative interest rates, based on peer-reviewed research.
-             % \item Built a C++ agent-based financial simulation modelling banks, households, and firms under dynamic and negative interest-rate regimes, based on peer-reviewed economic research.
-             % \item Developed a C++ application to simulate the behaviour of banks, households, and firms under dynamic and negative interest rates, based on the article from a scientific journal;
-        %      % \item Built a simulation to model the behaviour of banks, households, and firms under dynamic and negative interest rates in the C programming language, compiled using Clang in a Docker container for better experiments reproducibility.
              \end{highlights}
         %  \end{onecolentry}
 
