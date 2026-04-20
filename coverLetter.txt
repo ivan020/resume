@@ -1,0 +1,20 @@
+Ivan Evdokimov, Ph.D.
+Manchester, UK | ivevdm@gmail.com
+
+Adam Grant
+Head of AI and Data
+Salford City Council
+
+Supporting Statement: AI & Data Technical Lead
+
+The opportunity to join Salford’s newly formed AI & Data team is a perfect alignment with my professional trajectory and my personal connection to the Manchester area. As a Software Engineer with over four years of experience deploying enterprise-scale machine learning and generative AI solutions, I have built a career on the exact "hands-on, high-impact" work described in your mission. My background, which includes a PhD in Computational Finance, provides the technical depth required to lead the full AI/ML lifecycle from initial problem definition to ongoing model monitoring.
+
+In my recent work at the University of Essex, I have functioned as a technical lead by architecting production-grade CI/CD pipelines that enabled automated deployment for complex codebases. I designed automated testing frameworks specifically for AI-generated code, reducing manual review time by 70% while upholding the strict security and stability standards necessary for public sector innovation. This experience directly matches Salford's need for a leader who can shape engineering standards and toolchains while ensuring that systems are scalable and production-ready.
+
+My expertise in Generative AI and Large Language Models is grounded in practical, deployed applications rather than just experimentation. I have fine-tuned and deployed domain-specific models using vLLM and Ollama, achieving over 95% accuracy on sensitive social science datasets. Furthermore, I have integrated LLM support into enterprise Java applications to digitize and summarize complex reporting processes, demonstrating my ability to turn innovative ideas into functional, production-grade systems. While my primary cloud infrastructure experience has been built on AWS, my deep understanding of serverless ML infrastructure and MLOps pipelines allows me to rapidly adapt to and master the Azure AI tools utilized by Salford City Council.
+
+Beyond technical delivery, I bring a commitment to the "ethical, explainable, and secure" use of data. During my time with the UK Data Service, I managed disclosure risk assessments for sensitive datasets and optimized statistical algorithms to achieve an 11x performance improvement, ensuring that complex data could be processed both safely and efficiently. This role also requires a mentor and a communicator; having taught machine learning and data structures to over 100 students, I am adept at translating technical complexities for non-technical colleagues and fostering a collaborative, values-driven environment. I am eager to apply this blend of academic rigor and engineering excellence to deliver better outcomes for the people of Salford.
+
+Sincerely,
+
+Ivan Evdokimov, Ph.D.
