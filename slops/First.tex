@@ -1,0 +1,114 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+% Color configurations
+\definecolor{primary}{RGB}{0, 0, 0}
+\definecolor{links}{HTML}{1155cc}
+\hypersetup{colorlinks=true, linkcolor=primary, urlcolor=links}
+
+% Standardize URL style
+\urlstyle{same}
+
+% Section formatting with horizontal rules
+\titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% Custom itemize formatting for compact spacing (Fixed typo here)
+\setlist[itemize]{leftmargin=0.15in, noitemsep, topsep=2pt, partopsep=0pt}
+
+\pagenumbering{gobble} % Removes page numbers for a clean 1-2 page look
+
+\begin{document}
+
+% Header Section
+\begin{center}
+    {\Huge \bfseries Ivan Evdokimov, Ph.D.} \\ \vspace{4pt}
+    \textbf{London, UK (Open to Immediate Relocation)} \\ \vspace{3pt}
+    \small ivevdm@gmail.com \ $|$ \ \href{https://linkedin.com/in/ivan-evdokimov}{linkedin.com/in/ivan-evdokimov} \ $|$ \ \href{https://github.com/ivan020}{github.com/ivan020}
+\end{center}
+
+% Professional Summary
+\section*{Professional Summary}
+High-agency, product-minded Software Engineer with a Ph.D. in Computational Finance and over 4 years of experience building, optimizing, and shipping production-grade GenAI, LLM, and enterprise-scale ML products. Proven track record of working within multi-national teams to take complex AI systems from experimental stages to highly stable, scalable production environments. Expert in architecting automated, agentic-style deployment pipelines, designing robust MLOps infrastructure on AWS, and migrating legacy systems to high-performance architectures. Deeply customer-obsessed with a passion for transforming complex financial, economic, and data-heavy problems into intuitive SaaS platforms that drive user adoption and reduce manual workloads.
+
+% Technical Skills
+\section*{Technical Skills}
+\begin{itemize}
+    \item \textbf{AI \& LLM Engineering:} GenAI, Agentic Workflows \& Tool Use, Hugging Face, vLLM, Ollama, Mistral AI OCR, Prompt Engineering, Automated Metadata Classification.
+    \item \textbf{Languages \& Core Tech:} Python (PyTorch, Scikit-learn), C++, Java, Go, JavaScript, SQL (PostgreSQL), R, MATLAB.
+    \item \textbf{Cloud, DevOps \& MLOps:} AWS (Lambda, Step Functions, EFS), CI/CD (GitHub Actions), Vercel, Maven, Supabase, Model Governance, Drift Detection \& Automated Retraining Pipelines.
+    \item \textbf{Developer Productivity Tools:} Claude Code, Cursor, GitHub Copilot (Fluently utilized within high-velocity, AI-assisted development environments with 90\%+ codebase generation rates).
+\end{itemize}
+
+% Professional Experience
+\section*{Professional Experience}
+
+\noindent \textbf{Software Engineer - ML} \hfill \textit{Nov 2025 -- Present} \\
+\textit{University of Essex} \hfill Colchester, UK
+\begin{itemize}
+    \item \textbf{AI-Driven Development Automation:} Architected a production-grade CI/CD pipeline for an AI-powered development workflow utilizing GitHub Actions and Vercel, enabling automated deployment of codebases featuring a 90\%+ code generation rate on fast-paced weekly release cycles.
+    \item \textbf{AI Quality Assurance \& Trust:} Designed and built an automated testing and quality assurance framework optimized specifically for AI-generated code, implementing validation pipelines that slashed manual code review times by 70\% while safeguarding production stability and rigorous security standards.
+    \item \textbf{Multi-Tenant SaaS Infrastructure:} Owned the end-to-end MLOps infrastructure for a multi-tenant SaaS platform serving global B2B organizations, successfully minimizing engineering overhead by 60\% and accelerating product feature delivery from monthly to weekly releases.
+    \item \textbf{Product Delivery \& LLM Ingestion:} Developed and deployed a Java-based application using the Maven framework for a commercial partner to digitize complex asset examination reporting, integrating customized LLM workflows to summarize dense report contents into client-ready insights.
+\end{itemize}
+
+\vspace{6pt}
+
+\noindent \textbf{Software Engineer - ML} \hfill \textit{Jan 2023 -- Oct 2025} \\
+\textit{UK Data Service} \hfill Colchester, UK
+\begin{itemize}
+    \item \textbf{Production GenAI \& ML Models:} Trained, fine-tuned, and deployed domain-specific GenAI, scikit-learn, and PyTorch model hierarchies using Hugging Face, vLLM, and Ollama for automated metadata classification and disclosure risk assessment, hitting a 95\%+ accuracy ceiling on sensitive datasets.
+    \item \textbf{Serverless Infrastructure \& User Autonomy:} Designed and optimized serverless ML infrastructure on AWS (Lambda, Step Functions, EFS) with automated model retraining pipelines, cutting manual data validation workloads by 50\% and empowering non-technical staff to interact with complex data products independently.
+    \item \textbf{High-Performance Algorithmic Engineering:} Revolutionized statistical control algorithms by migrating critical data pathways from R to C++ using advanced bitmask techniques, yielding an 11x performance improvement and unlocking real-time data processing for sets exceeding 500k+ records.
+\end{itemize}
+
+\vspace{6pt}
+
+\noindent \textbf{Research Officer \& ML Instructor} \hfill \textit{Oct 2021 -- Dec 2022} \\
+\textit{University of Essex} \hfill Colchester, UK
+\begin{itemize}
+    \item \textbf{Computational Modeling Performance:} Successfully migrated intensive quantitative macroeconomic simulation models from MATLAB to C++, achieving an 8x simulation runtime reduction to facilitate active project collaborations with leading universities across the UK and the USA.
+    \item \textbf{Technical Mentorship \& Education:} Formulated curriculum and taught core technical concepts including Data Structures, C/C++, and Machine Learning to a diverse cohort of over 100 undergraduate and postgraduate students.
+\end{itemize}
+
+% Projects
+\section*{Projects}
+
+\noindent \textbf{FinBot: Chat-Based Trading Simulation} \hfill \textit{Go, PostgreSQL, Supabase, JavaScript}
+\begin{itemize}
+    \item Built a highly responsive, real-time trading simulation chatbot in Go integrated directly into live Twitch chat, backed by a robust API recording transactions seamlessly in a PostgreSQL (Supabase) database.
+    \item Developed a modern JavaScript web UI hosted online to track, calculate, and visualize user portfolio performance in real time using interactive graphical layouts and data tables.
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent \textbf{MTG Card Reader: GenAI Vision Product} \hfill \textit{Mistral AI OCR, Supabase, JavaScript}
+\begin{itemize}
+    \item Deployed a user-facing application that extracts card details from physical images using Mistral AI OCR and matches metadata instantly against records in a Supabase PostgreSQL backend.
+    \item Engineered a clean, responsive JavaScript web interface hosted via GitHub Pages, enabling users to instantly upload images and receive AI recognition results in real time.
+\end{itemize}
+
+% Education
+\section*{Education}
+
+\noindent \textbf{University of Essex} \hfill \textit{Oct 2021 -- May 2025} \\
+\textit{Ph.D. in Computational Finance}
+\begin{itemize}
+    \item Developed a PyTorch-based transfer learning framework for Bayesian model averaging within high-frequency financial forecasting applications.
+    \item Published peer-reviewed research papers and successfully built and launched an open-source package adopted by external financial institutions.
+\end{itemize}
+
+\vspace{4pt}
+
+\noindent \textbf{University of Essex} \hfill \textit{Oct 2020 -- Sep 2021} \\
+\textit{MSc in Financial Econometrics}
+\begin{itemize}
+    \item Designed and engineered a high-performance C++ agent-based financial simulation framework to model complex macroeconomic dynamics and market behavior under negative interest rate regimes.
+\end{itemize}
+
+\end{document}
