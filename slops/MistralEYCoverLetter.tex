@@ -1,0 +1,51 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\usepackage[left=20mm, right=10mm, top=20mm, bottom=20mm]{geometry} % <-- Key change
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt, parsep=0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% Personal Information
+\name{Ivan}{Evdokimov}
+\email{ivevdm@gmail.com}
+\phone[*]{+44 7586 774312}
+\address{Belfast, UK}{}
+
+\begin{document}
+
+% Cover Letter Header
+\recipient{EY Hiring Team}{EY \\ London, UK}
+\date{\today}
+\opening{Dear Hiring Manager,}
+\closing{Kind regards,}
+
+\makelettertitle
+\vspace{-0.5cm} % Reduce space after header
+
+I am excited to apply for the Consultant – Applied AI Engineer position at EY. With a PhD in Computational Finance and 6+ years of experience delivering production-grade AI systems, LLM/RAG pipelines, and FastAPI microservices, my background aligns closely with your requirements. EY’s focus on building secure, reliable AI solutions in regulated environments—particularly for Financial Services—resonates deeply with my expertise in financial data and enterprise-scale engineering.
+
+In my current role as Software Engineer – GenAI at the University of Essex, I:
+\begin{itemize}
+    \item Design and build enterprise FastAPI microservices and REST APIs by implementing CI/CD pipelines (GitHub Actions, Vercel), enabling weekly release cycles for AI-driven workflows.
+    \item Develop automated testing frameworks for LLM-generated code by creating comprehensive validation checks, reducing manual review time by 70\% while maintaining production stability and security.
+    \item Deliver end-to-end MLOps infrastructure for multi-tenant SaaS platforms by integrating monitoring, deployment, and retraining pipelines, accelerating feature delivery from monthly to weekly.
+\end{itemize}
+
+At the UK Data Service, I:
+\begin{itemize}
+    \item Built and deployed FastAPI-based LLM/ML services (PyTorch, Hugging Face, vLLM, Ollama) to automate classification tasks, achieving 95\%+ accuracy on sensitive datasets.
+    \item Implemented RAG pipelines by integrating embeddings, prompts, and retrieval strategies, enhancing metadata classification accuracy for large-scale datasets.
+    \item Designed serverless ML infrastructure on AWS by automating retraining and monitoring (Lambda, Step Functions, EFS), reducing manual workload by 50\%.
+    \item Collaborated with stakeholders to gather requirements by translating business needs into scalable technical solutions, demonstrating clear communication and client readiness.
+\end{itemize}
+
+My PhD in Computational Finance further strengthens my fit for EY’s Financial Services focus. I built high-performance C++ data pipelines for Bloomberg datasets and engineered a PyTorch transfer learning framework for financial prediction—directly relevant to your clients’ needs.
+
+What excites me most about this role is the opportunity to support discovery workshops, convert business challenges into user stories, and contribute to demos and feedback cycles—activities I’ve successfully performed in my current roles. My ability to write clean, tested, documented code and follow reference architectures and security patterns ensures I can deliver solutions that meet EY’s enterprise standards. Additionally, my growth mindset and experience contributing to documentation and reusable accelerators make me a strong fit for your squad-based, Academy-driven approach.
+
+I would welcome the opportunity to discuss how my technical skills and collaborative approach can contribute to EY’s mission. Thank you for your time and consideration; I look forward to the possibility of speaking with you.
+
+\makeletterclosing
+\end{document}
