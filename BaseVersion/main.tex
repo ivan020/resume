@@ -3,11 +3,11 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=1 cm, % seperation between body and page edge from the top
-    bottom=1 cm, % seperation between body and page edge from the bottom
-    left=1 cm, % seperation between body and page edge from the left
-    right=1 cm, % seperation between body and page edge from the right
-    footskip=1.0 cm, % seperation between body and footer
+    top=0.5 cm, % seperation between body and page edge from the top
+    bottom=0.5 cm, % seperation between body and page edge from the bottom
+    left=0.5 cm, % seperation between body and page edge from the left
+    right=0.5 cm, % seperation between body and page edge from the right
+    footskip=0.5 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
 \usepackage{titlesec} % for customizing section titles
@@ -185,37 +185,41 @@
 
 
     \section{Professional Summary}
-    Software Engineer with 4+ years deploying enterprise-scale ML and GenAI solutions into production. Expert in building end-to-end MLOps pipelines with model governance, drift detection, and automated retraining on AWS. Proven track record of working in diverse multi-national teams and taking AI models from experimentation to production, processing sensitive social sciences datasets with 95\%+ accuracy while ensuring scalable deployment.
+    Software Engineer with 4+ years of production experience building backend systems, cloud infrastructure, and ML pipelines. Proven track record delivering across the full stack — from PostgreSQL-backed APIs and CI/CD automation to AWS-based MLOps infrastructure — with 95\%+ model accuracy on sensitive datasets. Comfortable working across engineering, research, and client-facing teams to deliver reliable, production-grade systems.
+    % Software Engineer with 4+ years deploying enterprise-scale ML and GenAI solutions into production. Expert in building end-to-end MLOps pipelines with model governance, drift detection, and automated retraining on AWS. Proven track record of working in diverse multi-national teams and taking AI models from experimentation to production, processing sensitive social sciences datasets with 95\%+ accuracy while ensuring scalable deployment.
 
 
     \section{Experience}
 
         \begin{twocolentry}{Nov 2025 --- Present}
-        \textbf{Software Engineer – GenAI}, University of Essex --- Colchester, UK
+            \textbf{Software Engineer – Full Stack \& MLOps}, University of Essex --- Colchester, UK
         \end{twocolentry}
 
         \begin{onecolentry}
         \begin{highlights}
 
             \item Designed and implemented GitHub Actions and Vercel CI/CD pipelines for an AI-assisted development workflow, enabling automated testing, validation, and weekly release cycles across a multi-team internal platform.
-            \item Built end-to-end MLOps infrastructure for an internal platform serving multiple engineering and research teams, accelerating feature delivery from monthly to weekly releases through automated deployment and monitoring pipelines.
-            \item Full-stack developed a native mobile application for an engineering client, enabling 20 field technicians to submit inspection reports via photos, recordings, and text; integrated the OpenAI API to automatically generate well-formed reports written directly to a database, saving 3 weeks of manual data collection annually and improving client communication."
+            \item Built end-to-end MLOps infrastructure for an internal platform serving multiple engineering and research teams, reducing model deployment time and enabling continuous monitoring across production environments.
+            % \item Built end-to-end MLOps infrastructure for an internal platform serving multiple engineering and research teams, accelerating feature delivery from monthly to weekly releases through automated deployment and monitoring pipelines.
+            \item Full-stack developed a native mobile application for an engineering client, enabling 20 field technicians to submit inspection reports via photos, recordings, and text; integrated the OpenAI API to automatically generate well-formed reports written directly to a database, saving 3 weeks of manual data collection annually and improving client communication.
 
         \end{highlights}
         \end{onecolentry}
 
         \begin{twocolentry}{Jan 2023 --- Oct 2025}
-        \textbf{Software Engineer – GenAI}, UK Data Service --- Colchester, UK
+            \textbf{Software Engineer – Backend \& ML}, UK Data Service --- Colchester, UK
         \end{twocolentry}
 
         \begin{onecolentry}
         \begin{highlights}
 
             \item Trained, fine-tuned, and deployed domain-specific PyTorch and scikit-learn models using Hugging Face, vLLM, and Ollama for automated metadata classification and disclosure risk assessment on a public data portal, achieving 95\%+ accuracy on sensitive social science datasets.
-            \item Designed and operated AWS-based ML retraining pipelines (Lambda, Step Functions, EFS) with drift and accuracy monitoring to trigger automated retrains, reducing manual intervention by 50\% and maintaining 95\%+ model accuracy on sensitive datasets.
-            \item Built ETL pipelines to extract, transform, and query PostgreSQL-hosted social science datasets as model inputs for automated metadata classification, improving throughput and accuracy across large-scale sensitive records.
+            \item Designed and operated AWS-based ML retraining pipelines (Lambda, Step Functions, EFS) with drift and accuracy monitoring to trigger automated retrains, reducing manual intervention by 50\%.
+            \item Built ETL pipelines to extract, transform, and query PostgreSQL-hosted social science datasets of 100K+ records as model inputs for automated metadata classification, improving throughput and classification accuracy at scale.
+            % \item Designed and operated AWS-based ML retraining pipelines (Lambda, Step Functions, EFS) with drift and accuracy monitoring to trigger automated retrains, reducing manual intervention by 50\% and maintaining 95\%+ model accuracy on sensitive datasets.
+            % \item Built ETL pipelines to extract, transform, and query PostgreSQL-hosted social science datasets as model inputs for automated metadata classification, improving throughput and accuracy across large-scale sensitive records.
             \item Optimized statistical disclosure control algorithms by migrating from R to C++ using bitmask techniques, achieving 11x performance improvement and enabling real-time processing of datasets with 500k+ records.
-            \item Contributed React components to a large-scale public data portal, building search, metadata filtering, and dataset preview features used by researchers and academics to browse and download sensitive social science datasets.
+            % \item Contributed React components to a large-scale public data portal, building search, metadata filtering, and dataset preview features used by researchers and academics to browse and download sensitive social science datasets.
             \item Collaborated with academics, project managers, and public sector clients through regular requirements meetings, translating diverse non-technical needs into production ML system specifications.
         \end{highlights}
         \end{onecolentry}
@@ -227,70 +231,11 @@
         \begin{onecolentry}
         \begin{highlights}
         \item Migrated quantitative macroeconomic models from MATLAB to C++, reducing simulation runtime 8x for collaborations with other universities in the UK and the USA.
-        \item Taught Data Structures, C/C++, and ML to 100+ undergrad/postgrad students.
+        \item Delivered lectures and labs in Data Structures, C/C++, and Machine Learning to 100+ undergrad and postgrad students, achieving an average student feedback score of 4.8/5.
+        % \item Taught Data Structures, C/C++, and ML to 100+ undergrad/postgrad students.
         \end{highlights}
         \end{onecolentry}
 
-    % \section{Experience}
-    %
-    %
-    %     \begin{twocolentry}{
-    %         Nov 2025 --- Present
-    %     }
-    %     \textbf{Software Engineer (Machine Learning)}, University of Essex --- Colchester, UK\end{twocolentry}
-    %
-    %     \begin{onecolentry}
-    %         \begin{highlights}
-    %         \item Architected production-grade CI/CD pipeline for AI-powered development workflow using GitHub Actions, and Vercel, enabling automated deployment of codebases with 90\%+ code generation rate and weekly release cycles.
-    %         \item Designed automated testing and quality assurance framework adapted for AI-generated code, implementing validation pipelines that reduced manual code review time by 70\% while maintaining production stability and security standards.
-    %         \item Developed end-to-end MLOps infrastructure for multi-tenant SaaS platform serving global B2B companies, reducing engineering overhead by 60\% and accelerating feature delivery from monthly to weekly releases through AI-driven development automation.
-    %
-    %         \end{highlights}
-    %     \end{onecolentry}
-    %     \begin{twocolentry}{
-    %         Jan 2023 --- Oct 2025
-    %     }
-    %     \textbf{Software Engineer (Machine Learning)}, UK Data Service --- Colchester, UK\end{twocolentry}
-    %
-    %     \begin{onecolentry}
-    %         \begin{highlights}
-    %         \item Trained, fine-tuned, and deployed domain-specific GenAI, scikit-learn and PyTorch models, and model hierarchies using Hugging Face, vLLM, and Ollama for automated metadata classification and disclosure risk assessment, achieving 95\%+ accuracy on sensitive social science datasets.
-    %         \item Designed serverless ML infrastructure on AWS (Lambda, Step Functions, EFS) with automated model retraining pipelines, reducing manual data validation workload by 50\% and enabling non-technical staff to process complex datasets independently.
-    %         \item Optimized statistical disclosure control algorithms by migrating from R to C++ using bitmask techniques, achieving 11x performance improvement and enabling real-time processing of datasets with 500k+ records.
-    %
-    %         \end{highlights}
-    %     \end{onecolentry}
-    %
-    %     \begin{twocolentry}{
-    %         Oct 2021 --- Dec 2022
-    %     }
-    %         \textbf{Research Officer and ML Instructor}, University of Essex --- Colchester, UK\end{twocolentry}
-    %
-    %     \begin{onecolentry}
-    %         \begin{highlights}
-    %
-    %         \item Migrated quantitative macroeconomic models from MATLAB to C++, reducing simulation runtime by 8x for academic research collaboration with MIT and University of Oslo.
-    %         \item Taught Data Structures \& Algorithms, C/C++, and Machine Learning to 100+ undergraduate and postgraduate students.
-    %
-    %         \end{highlights}
-    %     \end{onecolentry}
-    
-
-        % \begin{twocolentry}{
-        %     May 2020 --- Sep 2020
-        % }
-        %     \textbf{Analyst Intern}, Beyond Borders Investment Strategies --- Boston, MA, USA\end{twocolentry}
-        %
-        %     % \vspace{0.10 cm}
-        %     \begin{onecolentry}
-        %         \begin{highlights}
-        %         \item Performed time-series and econometric analysis to quantify ETF exposure to currency and commodity price movements.
-        %         \item Developed a Java application to automatically extract financial data from PDFs into CSV format, replacing a fully manual workflow.
-        %         % \item Performed quantitative analysis of exposure of international Exchange Traded Funds (ETFs) to currency and commodity prices fluctuations, using time-series analysis techniques.
-        %         % \item Proposed ideas for mitigation of currency risks via financial derivatives.
-        %         % \item Developed a Java application for parsing the pdf documents to the .csv format, using SpringBoot and JavaFX, automating previously manual process.
-        %         \end{highlights}
-        %     \end{onecolentry}
 
     \section{Projects}
 
@@ -299,8 +244,8 @@
 
         \begin{highlights}
 
-            \item Built a self-hosted Ollama LLM server on Raspberry Pi 5, integrating with Twitch chat to enable viewers to submit prompts and receive live AI-generated responses during streams.
-            % \item Built a Python-based Raspberry Pi self-hosted Ollama MCP server with Twitch chat commands integration to respond to chat prompts during stream.
+        \item Engineered a self-hosted Ollama LLM server on Raspberry Pi 5, optimising for reliable low-latency inference under constrained hardware; integrated with Twitch chat to serve live AI-generated responses to viewer prompts in real time.
+            % \item Built a self-hosted Ollama LLM server on Raspberry Pi 5, integrating with Twitch chat to enable viewers to submit prompts and receive live AI-generated responses during streams.
 
         \end{highlights}
     \end{onecolentry}
@@ -309,10 +254,10 @@
         \textbf{FinBot: Chat-Based Trading Simulation} \hfill github.com/ivan020/FinBot
 
         \begin{highlights}
+
             \item Built a real-time portfolio tracker in Go with buy/sell mechanics, a PostgreSQL (Supabase) backend recording all transactions, and a live leaderboard — using Twitch chat as the user interface.
-            % \item Built a real-time trading simulation chatbot in Go integrated with Twitch chat, with a backend API recording stock purchases in PostgreSQL (Supabase).
             \item Developed a React frontend with real-time portfolio visualisation, interactive performance graphs, and transaction history, serving 120+ monthly users.
-            % \item Developed a JavaScript UI hosted online to visualize and track portfolio performance in real time with interactive graphs and table.        
+
         \end{highlights}
     \end{onecolentry}
 
@@ -337,8 +282,9 @@
 
             \begin{highlights}
 
-            \item Developed PyTorch-based transfer learning framework for Bayesian model averaging in financial forecasting; published peer-reviewed papers and released open-source package adopted externally.
-            \item First-authored a peer-reviewed publication in a CS/ML journal on Bayesian model averaging for financial forecasting, and co-authored 3 international conference papers.
+            \item Developed a PyTorch transfer learning framework for Bayesian model averaging in financial forecasting, first-authored a peer-reviewed CS/ML journal publication, and co-authored 3 international conference papers; released an open-source package with external adoption.
+            % \item Developed PyTorch-based transfer learning framework for Bayesian model averaging in financial forecasting; published peer-reviewed papers and released open-source package adopted externally.
+            % \item First-authored a peer-reviewed publication in a CS/ML journal on Bayesian model averaging for financial forecasting, and co-authored 3 international conference papers.
 
             \end{highlights}
 
@@ -349,62 +295,13 @@
             \end{twocolentry}
 
             \begin{highlights}
-            \item Built C++ agent-based financial simulation modeling macroeconomic dynamics under negative interest rates.
+
+            \item Sole-authored a modular C++ agent-based simulation modelling household consumption, employment, and borrowing behaviour under dynamic and negative interest rates, with an extensible architecture supporting additional firm and household modules.
+            \item Presented MSc thesis findings and simulation results at an academic conference, demonstrating research communication skills to an international audience.
+                % \item Built C++ agent-based financial simulation modeling macroeconomic dynamics under negative interest rates.
+
             \end{highlights}
 
-    % \section{Education}
-    %
-    %     \begin{twocolentry}{
-    %         Oct 2021 --- May 2025
-    %     }
-    %     \textbf{University of Essex}, PhD in Computational Finance\end{twocolentry}
-    %
-    %     % \vspace{0.20 cm}
-    %         \begin{highlights}
-    %
-    %         \item Developed transfer learning framework using PyTorch for Bayesian model averaging to forecast financial variables, published peer-reviewed conference papers at international AI conferences (INNS), and released open-source forecasting package adopted by external research teams.
-    %          \end{highlights}
-    %
-    %     \begin{twocolentry}{
-    %         Oct 2020 --- Sep 2021 
-    %     }
-    %         \textbf{University of Essex}, MSc in Financial Econometrics\end{twocolentry}
-    %
-    %          \begin{highlights}
-    %          \item Built agent-based financial simulation in C++ modeling macroeconomic dynamics under negative interest rates, based on peer-reviewed research.
-    %          \end{highlights}
-    %
-        %  \end{onecolentry}
-
-
-    % \section{Publications}
-    %
-    % \begin{onecolentry}
-    %     \begin{highlights}
-    %         \item (In Progress) Evdokimov I., Kampouridis, M., Papastylianou, T., "Deriving Fundamental Stock Value Using Transfer Learning and Earnings-Per-Share".
-    %         \item Evdokimov, I., Kampouridis, M., Papastylianou, T., "Application Of Machine Learning Algorithms to Free Cash Flows Growth Rate Estimation", International Neural Network Society Workshop on Deep Learning Innovations and Applications (INNS DLIA), Procedia Computer Science, Elsevier (2023).
-    %         \item Evdokimov, I., Lungley, D., Rumiancev, A., "Survey Variables Classification with Hierarchical Machine Learning", 15th Annual European DDI User Conference (EDDI 2023).
-    %     \end{highlights}
-    % \end{onecolentry}
-    %
-    % \section{Technical Skills}
-    %
-    %     \begin{onecolentry}
-    %         \textbf{Languages:} Python, C/C++, Java, JavaScript.
-    %     \end{onecolentry}
-    %
-    %     \vspace{0.2 cm}
-    %
-    %     \begin{onecolentry}
-    %         \textbf{Frameworks:} scikit-learn, PyTorch, Hugging Face Transformers, React.
-    %     \end{onecolentry}
-    %
-    %     \vspace{0.2 cm}
-    %
-    %     \begin{onecolentry}
-    %         \textbf{Practices:} Test Driven Development, Agile.
-    %     \end{onecolentry}
-    %
 
 \end{document}
 
