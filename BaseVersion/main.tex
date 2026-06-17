@@ -196,10 +196,11 @@
 
         \begin{onecolentry}
         \begin{highlights}
-            \item Architected production-grade CI/CD pipeline for AI-powered development workflow using GitHub Actions, and Vercel, enabling automated deployment of codebases with 90\%+ code generation rate and weekly release cycles.
-            \item Designed automated testing and quality assurance framework adapted for AI-generated code, implementing validation pipelines that reduced manual code review time by 70\% while maintaining production stability and security standards.
-            \item Developed end-to-end MLOps infrastructure for multi-tenant SaaS platform serving global B2B companies, accelerating feature delivery from monthly to weekly releases through AI-driven development automation.
-            \item Deployed the Java application using Maven-framework for a gearswitch company to digitise the process of reporting of the installation asset examination with integrated LLM support for summarisation of the report content.
+
+            \item Designed and implemented GitHub Actions and Vercel CI/CD pipelines for an AI-assisted development workflow, enabling automated testing, validation, and weekly release cycles across a multi-team internal platform.
+            \item Built end-to-end MLOps infrastructure for an internal platform serving multiple engineering and research teams, accelerating feature delivery from monthly to weekly releases through automated deployment and monitoring pipelines.
+            \item Full-stack developed a native mobile application for an engineering client, enabling 20 field technicians to submit inspection reports via photos, recordings, and text; integrated the OpenAI API to automatically generate well-formed reports written directly to a database, saving 3 weeks of manual data collection annually and improving client communication."
+
         \end{highlights}
         \end{onecolentry}
 
@@ -210,10 +211,11 @@
         \begin{onecolentry}
         \begin{highlights}
 
-            \item Trained, fine-tuned, and deployed domain-specific GenAI, scikit-learn and PyTorch models, and model hierarchies using Hugging Face, vLLM, and Ollama for automated metadata classification and disclosure risk assessment, achieving 95\%+ accuracy on sensitive social science datasets.
-            \item Designed serverless ML infrastructure on AWS (Lambda, Step Functions, EFS) with automated model retraining pipelines, reducing manual data validation workload by 50\% and enabling non-technical staff to process complex datasets independently.
+            \item Trained, fine-tuned, and deployed domain-specific PyTorch and scikit-learn models using Hugging Face, vLLM, and Ollama for automated metadata classification and disclosure risk assessment on a public data portal, achieving 95\%+ accuracy on sensitive social science datasets.
+            \item Designed and operated AWS-based ML retraining pipelines (Lambda, Step Functions, EFS) with drift and accuracy monitoring to trigger automated retrains, reducing manual intervention by 50\% and maintaining 95\%+ model accuracy on sensitive datasets.
             \item Built ETL pipelines to extract, transform, and query PostgreSQL-hosted social science datasets as model inputs for automated metadata classification, improving throughput and accuracy across large-scale sensitive records.
             \item Optimized statistical disclosure control algorithms by migrating from R to C++ using bitmask techniques, achieving 11x performance improvement and enabling real-time processing of datasets with 500k+ records.
+            \item Contributed React components to a large-scale public data portal, building search, metadata filtering, and dataset preview features used by researchers and academics to browse and download sensitive social science datasets.
             \item Collaborated with academics, project managers, and public sector clients through regular requirements meetings, translating diverse non-technical needs into production ML system specifications.
         \end{highlights}
         \end{onecolentry}
@@ -296,7 +298,10 @@
         \textbf{Chat-LLM} \hfill github.com/ivan020/ChatLLM
 
         \begin{highlights}
-            \item Built a Python-based Raspberry Pi self-hosted Ollama MCP server with Twitch chat commands integration to respond to chat prompts during stream.
+
+            \item Built a self-hosted Ollama LLM server on Raspberry Pi 5, integrating with Twitch chat to enable viewers to submit prompts and receive live AI-generated responses during streams.
+            % \item Built a Python-based Raspberry Pi self-hosted Ollama MCP server with Twitch chat commands integration to respond to chat prompts during stream.
+
         \end{highlights}
     \end{onecolentry}
 
@@ -304,8 +309,10 @@
         \textbf{FinBot: Chat-Based Trading Simulation} \hfill github.com/ivan020/FinBot
 
         \begin{highlights}
-            \item Built a real-time trading simulation chatbot in Go integrated with Twitch chat, with a backend API recording stock purchases in PostgreSQL (Supabase).
-            \item Developed a JavaScript UI hosted online to visualize and track portfolio performance in real time with interactive graphs and table.        
+            \item Built a real-time portfolio tracker in Go with buy/sell mechanics, a PostgreSQL (Supabase) backend recording all transactions, and a live leaderboard — using Twitch chat as the user interface.
+            % \item Built a real-time trading simulation chatbot in Go integrated with Twitch chat, with a backend API recording stock purchases in PostgreSQL (Supabase).
+            \item Developed a React frontend with real-time portfolio visualisation, interactive performance graphs, and transaction history, serving 120+ monthly users.
+            % \item Developed a JavaScript UI hosted online to visualize and track portfolio performance in real time with interactive graphs and table.        
         \end{highlights}
     \end{onecolentry}
 
@@ -313,21 +320,12 @@
         \textbf{MTG Card Reader} \hfill ivan020.github.io/MtgRecognizer/
 
         \begin{highlights}
-            \item Deployed the Golang REST API with LLM integration to map the card data against the PostgreSQL database.
-            \item Developed React application deployed on vercel for the project frontend.
+
+            \item Built a Golang REST API that uses OCR to extract text from Magic: The Gathering card photos, identifies the card via LLM, and returns real-time price data from a PostgreSQL-backed catalogue.
+            \item Developed a React frontend with card filtering, deck management, and real-time price display, deployed on Vercel.
+
         \end{highlights}
     \end{onecolentry}
-
-    % \begin{onecolentry}
-    %     \textbf{BWA: Bayesian Weighted Model Averaging} \hfill github.com/ivan020/transferLearningForecasting
-    %
-    %     \begin{highlights}
-    %         \item Developed a Python library extending scikit-learn for Bayesian model averaging to combine multiple models and improve time-series forecasting in a sample with limited number of observations.
-    %         \item Achieved 16\% improvement over baseline models; results published in a peer-reviewed journal.
-    %     \end{highlights}
-    % \end{onecolentry}
-
-
 
     \section{Education}
 
@@ -338,8 +336,10 @@
             \end{twocolentry}
 
             \begin{highlights}
+
             \item Developed PyTorch-based transfer learning framework for Bayesian model averaging in financial forecasting; published peer-reviewed papers and released open-source package adopted externally.
-            \item Listed as the main author on the internationally acknowledged scientific journal publication and co-authored 3 scientific conference papers.
+            \item First-authored a peer-reviewed publication in a CS/ML journal on Bayesian model averaging for financial forecasting, and co-authored 3 international conference papers.
+
             \end{highlights}
 
             \begin{twocolentry}{
