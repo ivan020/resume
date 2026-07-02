@@ -1,48 +1,39 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
-\moderncvstyle{classic}  % Style options: 'casual', 'classic', 'oldstyle', 'banking'
-\moderncvcolor{blue}     % Color options: 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+\moderncvstyle{classic}
+\moderncvcolor{blue}
 
 \usepackage[scale=0.75]{geometry}
 
 % Personal Information
 \name{Ivan}{Evdokimov}
 \email{ivevdm@gmail.com}
-\phone[*]{+44 7586 774312}
+\phone[mobile]{+44 7586 774312}
 
 % Custom Variables
 \newcommand{\positionname}{Python Developer}
-\newcommand{\companyfull}{ Other Company }
+\newcommand{\companyfull}{Other Company}
 \newcommand{\companyshort}{Other Company}
 
 \begin{document}
 
 % Cover Letter Header
-\recipient{}{}
+\recipient{Hiring Manager}{Acuity}
 \date{\today}
 \opening{Dear Hiring Manager,}
 \closing{Kind regards,}
 
 \makelettertitle
 
-I am excited to apply for the Consultant – Applied AI Engineer position at EY. With a PhD in Computational Finance and 6+ years of experience delivering production-grade AI systems, LLM/RAG pipelines, and FastAPI microservices, my background aligns closely with your requirements. EY’s focus on building secure, reliable AI solutions in regulated environments—particularly for Financial Services—resonates deeply with my expertise in financial data and enterprise-scale engineering.
-In my current role as Software Engineer – GenAI at the University of Essex, I:
+I'm writing to apply for the Software Engineer (Python, AI) role at Acuity. I'm a software engineer with a Ph.D. in Computational Finance and over four years of production experience building backend systems, REST APIs, and AI-driven infrastructure, and I'm drawn to Acuity's focus on using AI to solve real-world problems within a cloud-native, Agile engineering culture.
 
-Design and build enterprise FastAPI microservices and REST APIs by implementing CI/CD pipelines (GitHub Actions, Vercel), enabling weekly release cycles for AI-driven workflows.
-Develop automated testing frameworks for LLM-generated code by creating comprehensive validation checks, reducing manual review time by 70\% while maintaining production stability and security.
-Deliver end-to-end MLOps infrastructure for multi-tenant SaaS platforms by integrating monitoring, deployment, and retraining pipelines, accelerating feature delivery from monthly to weekly.
-At the UK Data Service, I:
+At the UK Data Service, I spent two and a half years building and operating Python-based ML systems in production: training and deploying PyTorch and scikit-learn models with Hugging Face, vLLM, and Ollama for automated metadata classification, and designing AWS-based retraining pipelines (Lambda, Step Functions, EFS) with drift monitoring that cut manual intervention by 50\%. I also built ETL pipelines against PostgreSQL datasets of 100K+ records to feed those models, and rewrote a performance-critical disclosure-control algorithm from R to C++, achieving an 11x speedup for real-time processing at scale. That combination of Python, cloud infrastructure, and production ML is close to the core of what this role asks for.
 
-Built and deployed FastAPI-based LLM/ML services (PyTorch, Hugging Face, vLLM, Ollama) to automate classification tasks, achieving 95\%+ accuracy on sensitive datasets.
-Implemented RAG pipelines by integrating embeddings, prompts, and retrieval strategies, enhancing metadata classification accuracy for large-scale datasets.
-Designed serverless ML infrastructure on AWS by automating retraining and monitoring (Lambda, Step Functions, EFS), reducing manual workload by 50%.
-Collaborated with stakeholders to gather requirements by translating business needs into scalable technical solutions, demonstrating clear communication and client readiness.
-My PhD in Computational Finance further strengthens my fit for EY’s Financial Services focus. I built high-performance C++ data pipelines for Bloomberg datasets and engineered a PyTorch transfer learning framework for financial prediction—directly relevant to your clients’ needs.
-What excites me most about this role is the opportunity to support discovery workshops, convert business challenges into user stories, and contribute to demos and feedback cycles—activities I’ve successfully performed in my current roles. My ability to write clean, tested, documented code and follow reference architectures and security patterns ensures I can deliver solutions that meet EY’s enterprise standards. Additionally, my growth mindset and experience contributing to documentation and reusable accelerators make me a strong fit for your squad-based, Academy-driven approach.
-I would welcome the opportunity to discuss how my technical skills and collaborative approach can contribute to EY’s mission. Thank you for your time and consideration; I look forward to the possibility of speaking with you.
+In my current role at the University of Essex, I've built GitHub Actions and Vercel CI/CD pipelines supporting automated testing and weekly release cycles for a multi-team internal platform, and stood up MLOps infrastructure serving multiple engineering and research teams. I also integrated the OpenAI API into a native mobile app used by field technicians, turning raw photo, audio, and text input into well-formed reports written directly to a database — direct experience shipping AI features that solve a concrete business problem, which is exactly the kind of work Acuity's job description calls out.
 
-\vspace{0.25cm}
-Kind regards,
+Across both roles and in my own projects, I've worked with REST API design, Git-based branching workflows, and cross-functional collaboration with academics, product managers, and public sector clients, translating non-technical requirements into production specifications — skills that map directly onto Acuity's Agile, cross-team environment. While my recent API work has spanned Python, Go, and TypeScript rather than FastAPI or Flask specifically, I pick up frameworks quickly and I'm genuinely excited to deepen my focus on the modern Python stack (FastAPI, Pydantic, async programming) this role centers on.
 
-Ivan Evdokimov
+I'd welcome the chance to bring this background to Acuity and to contribute to your AI-driven platforms on-site. Thank you for your time and consideration — I look forward to the opportunity to discuss how I can contribute to your team.
+
+\makeletterclosing
+
 \end{document}
-
