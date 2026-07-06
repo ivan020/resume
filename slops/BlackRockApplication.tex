@@ -1,0 +1,310 @@
+\documentclass[6pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=0.5 cm, % seperation between body and page edge from the top
+    bottom=0.5 cm, % seperation between body and page edge from the bottom
+    left=0.5 cm, % seperation between body and page edge from the left
+    right=0.5 cm, % seperation between body and page edge from the right
+    footskip=0.5 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Ivan's CV},
+    pdfauthor={Ivan Evdokimov},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage{charter}
+
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\pagenumbering{gobble} % no page numbering
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.1 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.02 cm,
+        parsep=0.02 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 8pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.02 cm,
+        parsep=0.02 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
+
+    \begin{header}
+        \fontsize{15 pt}{15 pt}\selectfont Ivan Evdokimov, Ph.D.
+
+        \vspace{1 pt}
+
+        \normalsize
+        \mbox{Manchester, UK}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{mailto:ivevdm@gmail.com}{ivevdm@gmail.com}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/ivan-evdokimov}{linkedin.com/in/ivan-evdokimov}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://github.com/ivan020}{github.com/ivan020}}%
+    \end{header}
+
+    % \vspace{5 pt - 0.3 cm}
+    \vspace{5pt}
+
+
+    \section{Professional Summary}
+    Software Engineer with 4+ years of production experience building backend systems, cloud infrastructure, and ML pipelines. Proven track record delivering across the full stack — from PostgreSQL-backed APIs and CI/CD automation to AWS-based MLOps infrastructure — with 95\%+ model accuracy on sensitive datasets. Comfortable working across engineering, research, and client-facing teams to deliver reliable, production-grade systems.
+    % Software Engineer with 4+ years deploying enterprise-scale ML and GenAI solutions into production. Expert in building end-to-end MLOps pipelines with model governance, drift detection, and automated retraining on AWS. Proven track record of working in diverse multi-national teams and taking AI models from experimentation to production, processing sensitive social sciences datasets with 95\%+ accuracy while ensuring scalable deployment.
+
+
+    \section{Experience}
+
+        \begin{twocolentry}{Nov 2025 --- Present}
+            \textbf{Software Engineer – Full Stack \& MLOps}, University of Essex --- Colchester, UK
+        \end{twocolentry}
+
+        \begin{onecolentry}
+        \begin{highlights}
+
+            \item Designed CI/CD pipelines (GitHub Actions, Vercel) with Docker-based containerisation for an AI-assisted development workflow, enabling automated testing, validation, and weekly release cycles across a multi-team internal platform.
+            \item Built end-to-end MLOps infrastructure, including Dockerised model services, for an internal platform serving multiple engineering and research teams, collaborating with engineering, research, and platform stakeholders to define architecture requirements..
+            \item Full-stack developed a native mobile application for an engineering client, enabling 20 field technicians to submit inspection reports via photos, recordings, and text; integrated the OpenAI API to automatically generate well-formed reports written directly to a database, saving 3 weeks of manual data collection annually and improving client communication.
+            % \item Built end-to-end MLOps infrastructure for an internal platform serving multiple engineering and research teams, accelerating feature delivery from monthly to weekly releases through automated deployment and monitoring pipelines.
+
+        \end{highlights}
+        \end{onecolentry}
+
+        \begin{twocolentry}{Jan 2023 --- Oct 2025}
+            \textbf{Software Engineer – Backend \& ML}, UK Data Service --- Colchester, UK
+        \end{twocolentry}
+
+        \begin{onecolentry}
+        \begin{highlights}
+
+            \item Trained, fine-tuned, and deployed domain-specific PyTorch and scikit-learn models using Hugging Face, vLLM, and Ollama for automated NLP-based metadata classification and disclosure risk assessment on a public data portal, achieving 95\%+ accuracy on sensitive social science datasets.
+            \item Designed and operated AWS-based ML retraining pipelines (Lambda, Step Functions, EFS) with drift and accuracy monitoring, automated alerting, and logging to support model governance and ensure production reliability, reducing manual intervention by 70\%.
+            \item Built and orchestrated ETL data pipelines and workflows to extract, transform, and query PostgreSQL-hosted social science datasets of 100K+ records as model inputs for automated metadata classification, improving throughput and classification accuracy at scale.
+            \item Led legacy system transformation, migrating disclosure-control algorithms from R to C++, achieving 11x performance improvement and enabling real-time disclosure risk detection at scale, supporting regulatory and statistical disclosure control requirements on sensitive datasets.
+            \item Owned ML project delivery end-to-end, managing stakeholder requirements from academics, project managers, and public sector clients through the full ML lifecycle.
+            % \item Contributed React components to a large-scale public data portal, building search, metadata filtering, and dataset preview features used by researchers and academics to browse and download sensitive social science datasets.
+            % \item Designed and operated AWS-based ML retraining pipelines (Lambda, Step Functions, EFS) with drift and accuracy monitoring to trigger automated retrains, reducing manual intervention by 50\% and maintaining 95\%+ model accuracy on sensitive datasets.
+            % \item Built ETL pipelines to extract, transform, and query PostgreSQL-hosted social science datasets as model inputs for automated metadata classification, improving throughput and accuracy across large-scale sensitive records.
+
+        \end{highlights}
+        \end{onecolentry}
+
+        \begin{twocolentry}{Oct 2021 --- Dec 2022}
+        \textbf{Research Officer \& ML Instructor}, University of Essex --- Colchester, UK
+        \end{twocolentry}
+
+        \begin{onecolentry}
+        \begin{highlights}
+        \item Migrated quantitative macroeconomic models from MATLAB to C++, reducing simulation runtime 8x for collaborations with other universities in the UK and the USA.
+        \item Delivered lectures and labs in Data Structures, C/C++, and Machine Learning to 100+ undergrad and postgrad students, achieving an average student feedback score of 4.8/5.
+        % \item Taught Data Structures, C/C++, and ML to 100+ undergrad/postgrad students.
+        \end{highlights}
+        \end{onecolentry}
+
+
+    \section{Projects}
+
+    \begin{onecolentry}
+        \textbf{Chat-LLM} \hfill github.com/ivan020/ChatLLM
+
+        \begin{highlights}
+
+        \item Engineered a self-hosted Ollama LLM server on Raspberry Pi 5 with agentic tool-calling capabilities, optimising for reliable low-latency inference under constrained hardware; integrated with Twitch chat to serve live AI-generated responses and execute custom tools/actions in real time based on viewer prompts.
+            % \item Built a self-hosted Ollama LLM server on Raspberry Pi 5, integrating with Twitch chat to enable viewers to submit prompts and receive live AI-generated responses during streams.
+
+        \end{highlights}
+    \end{onecolentry}
+
+    \begin{onecolentry}
+        \textbf{FinBot: Chat-Based Trading Simulation} \hfill github.com/ivan020/FinBot
+
+        \begin{highlights}
+
+            \item Built a real-time portfolio tracker in Go with buy/sell mechanics, a PostgreSQL (Supabase) backend recording all transactions, and a live leaderboard — using Twitch chat as the user interface.
+            \item Developed a TypeScript React frontend with real-time portfolio visualisation, interactive performance graphs, and transaction history, serving 120+ monthly users.
+
+        \end{highlights}
+    \end{onecolentry}
+
+    \begin{onecolentry}
+        \textbf{MTG Card Reader} \hfill ivan020.github.io/MtgRecognizer/
+
+        \begin{highlights}
+
+            \item Built a Golang REST API that uses OCR to extract text from Magic: The Gathering card photos, identifies the card via LLM, and returns real-time price data from a PostgreSQL-backed catalogue.
+            \item Developed a TypeScript React frontend with card filtering, deck management, and real-time price display, deployed on Vercel.
+
+        \end{highlights}
+    \end{onecolentry}
+
+    \section{Education}
+
+            \begin{twocolentry}{
+                Oct 2021 --- May 2025
+            }
+            \textbf{University of Essex}, PhD in Computational Finance
+            \end{twocolentry}
+
+            \begin{highlights}
+
+            \item Developed a PyTorch transfer learning framework for Bayesian model averaging in financial forecasting, first-authored a peer-reviewed CS/ML journal publication, and co-authored 3 international conference papers; released an open-source package with external adoption.
+            % \item Developed PyTorch-based transfer learning framework for Bayesian model averaging in financial forecasting; published peer-reviewed papers and released open-source package adopted externally.
+            % \item First-authored a peer-reviewed publication in a CS/ML journal on Bayesian model averaging for financial forecasting, and co-authored 3 international conference papers.
+
+            \end{highlights}
+
+            \begin{twocolentry}{
+                Oct 2020 --- Sep 2021
+            }
+            \textbf{University of Essex}, MSc in Financial Econometrics
+            \end{twocolentry}
+
+            \begin{highlights}
+
+            \item Sole-authored a modular C++ agent-based simulation modelling household consumption, employment, and borrowing behaviour under dynamic and negative interest rates, with an extensible architecture supporting additional firm and household modules.
+            % \item Presented MSc thesis findings and simulation results at an academic conference, demonstrating research communication skills to an international audience.
+                % \item Built C++ agent-based financial simulation modeling macroeconomic dynamics under negative interest rates.
+
+            \end{highlights}
+
+
+\end{document}
+
+
+
