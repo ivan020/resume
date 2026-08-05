@@ -1,39 +1,35 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
-\moderncvstyle{classic}
-\moderncvcolor{blue}
+\documentclass[11pt]{letter}
 
-\usepackage[scale=0.75]{geometry}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=black, linkcolor=black}
 
-% Personal Information
-\name{Ivan}{Evdokimov}
-\email{ivevdm@gmail.com}
-\phone[mobile]{+44 7586 774312}
-
-% Custom Variables
-\newcommand{\positionname}{Python Developer}
-\newcommand{\companyfull}{Other Company}
-\newcommand{\companyshort}{Other Company}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
 
 \begin{document}
 
-% Cover Letter Header
-\recipient{Hiring Manager}{Acuity}
-\date{\today}
-\opening{Dear Hiring Manager,}
-\closing{Kind regards,}
+\begin{center}
+{\Large \textbf{Ivan Evdokimov, Ph.D.}}\\[4pt]
+{\small Manchester, UK \; $|$ \; ivevdm@gmail.com \; $|$ \; \href{https://linkedin.com/in/ivan-evdokimov}{linkedin.com/in/ivan-evdokimov} \; $|$ \; \href{https://github.com/ivan020}{github.com/ivan020}}
+\end{center}
 
-\makelettertitle
+\vspace{10pt}
 
-I'm writing to apply for the Software Engineer (Python, AI) role at Acuity. I'm a software engineer with a Ph.D. in Computational Finance and over four years of production experience building backend systems, REST APIs, and AI-driven infrastructure, and I'm drawn to Acuity's focus on using AI to solve real-world problems within a cloud-native, Agile engineering culture.
+Dear Hiring Manager,
 
-At the UK Data Service, I spent two and a half years building and operating Python-based ML systems in production: training and deploying PyTorch and scikit-learn models with Hugging Face, vLLM, and Ollama for automated metadata classification, and designing AWS-based retraining pipelines (Lambda, Step Functions, EFS) with drift monitoring that cut manual intervention by 50\%. I also built ETL pipelines against PostgreSQL datasets of 100K+ records to feed those models, and rewrote a performance-critical disclosure-control algorithm from R to C++, achieving an 11x speedup for real-time processing at scale. That combination of Python, cloud infrastructure, and production ML is close to the core of what this role asks for.
+I am writing to express my strong interest in the Graduate Digital Consultant/Geospatial Consultant position with Stantec’s 2027 Graduate Programme in Edinburgh. With a PhD in Computational Finance and extensive experience building production AI systems, I am eager to apply my data analytics and automation expertise to the water sector, supporting projects that improve decision-making and environmental outcomes.
 
-In my current role at the University of Essex, I've built GitHub Actions and Vercel CI/CD pipelines supporting automated testing and weekly release cycles for a multi-team internal platform, and stood up MLOps infrastructure serving multiple engineering and research teams. I also integrated the OpenAI API into a native mobile app used by field technicians, turning raw photo, audio, and text input into well-formed reports written directly to a database — direct experience shipping AI features that solve a concrete business problem, which is exactly the kind of work Acuity's job description calls out.
+My background in developing AI workflows, automated data pipelines, and predictive analytics has given me hands-on experience in data analysis, pattern recognition, and translating complex datasets into actionable insights—skills that align directly with the core responsibilities of this role. I am particularly excited about the opportunity to work with telemetry and asset data to help clients reduce carbon, improve resilience, and gain better insights from their water networks.
+I strongly identify with the qualities you seek in candidates. I am an Adapter comfortable with dynamic tasks, a Perseverer who stays composed facing challenges, an Eager Learner who continuously expands my knowledge, a Collaborator who values diverse perspectives, and a Problem-Solver unafraid to challenge conventional thinking. While I have technical experience, I am particularly motivated by the opportunity to develop as a well-rounded consultant, building client management and communication skills alongside technical delivery.
+I am available to work from your Edinburgh office four days per week as required and hold the unconditional right to live and work in the UK. I would welcome the opportunity to discuss how my data science background and passion for sustainable solutions can contribute to Stantec’s water sector projects.
 
-Across both roles and in my own projects, I've worked with REST API design, Git-based branching workflows, and cross-functional collaboration with academics, product managers, and public sector clients, translating non-technical requirements into production specifications — skills that map directly onto Acuity's Agile, cross-team environment. While my recent API work has spanned Python, Go, and TypeScript rather than FastAPI or Flask specifically, I pick up frameworks quickly and I'm genuinely excited to deepen my focus on the modern Python stack (FastAPI, Pydantic, async programming) this role centers on.
+Thank you for your time and consideration. I look forward to the possibility of joining your team.
 
-I'd welcome the chance to bring this background to Acuity and to contribute to your AI-driven platforms on-site. Thank you for your time and consideration — I look forward to the opportunity to discuss how I can contribute to your team.
-
-\makeletterclosing
+Kind regards,\\
+Ivan Evdokimov
 
 \end{document}
+
