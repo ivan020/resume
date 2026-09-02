@@ -1,19 +1,19 @@
-title, applied to, link, outcome,location,
-Data Scientist, BBC, https://careers.bbc.co.uk/job/Data-Scientist/31040-en_GB, rejected, UK,
-Data Scientist, Slalom, https://jobs.slalom.com/?src=a121R00000NSLLRQA5#/post/a0hPh0000040b0T, rejected, UK,
-Senior Research Data Scientist, dunnhumby, https://job-boards.greenhouse.io/dunnhumby/jobs/6354666003, rejected, UK,
-Senior Programmer and Data Manager, Ricardo, https://careers-ricardo.icims.com/jobs/3147/senior-programmer-and-data-manager/candidate?from=login&csrf=2B2DBA98FBB963C7&hashed=-626006868&uploadResume=1&uploadResume=1, rejected, UK,
-AI/ML Engineer, Forge Holiday Group, https://careers.forgeholidays.com/job/764826, rejected, UK,
-Math Software Developer, Light & Wonder, https://lnw.wd5.myworkdayjobs.com/en-US/LightWonderExternalCareers/login, rejected, UK,
-Graduate Software Engineer, Ashton Fire, https://ashtonfire.bamboohr.com/careers/50, rejected, UK,
-Data Consultant, WSP, https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/fr-CA/sites/CX_2001/job/73871/?mode=location, rejected,  UK,
-Mid Software Developer, Bentley Systems,https://career4.successfactors.com/portalcareer?_s.crb=H2fNdhGOn0ge2cdXhZH4HFYO4%252bhwC%252bhIX882uqKbh4c%253d,rejected  UK,
-ML Engineer, Netflix, https://explore.jobs.netflix.net/careers/search?query=%2A&pid=790303496227&domain=netflix.com&sort_by=relevance, rejected, UK,
-Quantitative Researcher, Fuse Energy (Dubai), https://www.linkedin.com/jobs/search-results/?currentJobId=4231733769&eBP=NOT_ELIGIBLE_FOR_CHARGING&keywords=python%20developer&refId=ZbH3%2Bpr%2BqUzocguTYHAM0A%3D%3D&start=25&trackingId=JKz8p0XHd9p0DiL1rUUA6Q%3D%3D, ghosted, UK,
-Reply Cortex, Graduate AI Software Engineer, https://career5.successfactors.eu/portalcareer?_s.crb=AoMGz8mNnD%252fpU8sI76K9lg12i5HckWdEMgdveNANst4%253d, ghosted, UK,
-Full Stack AI Developer, JP Morgan Chase, https://... , rejected, UK,
-Senior Data Scientist, Monzo, https://... , rejected, UK,
-Assistant Manager (Model Validation Quant), Lloyds Banking Group, https://www.lloydsbankinggroup.com/careers/job-search/workday-job.148001.html, rejected UK,
+title, applied to, link, outcome, location
+Data Scientist, BBC, https://careers.bbc.co.uk/job/Data-Scientist/31040-en_GB, rejected, UK
+Data Scientist, Slalom, https://jobs.slalom.com/?src=a121R00000NSLLRQA5#/post/a0hPh0000040b0T, rejected, UK
+Senior Research Data Scientist, dunnhumby, https://job-boards.greenhouse.io/dunnhumby/jobs/6354666003, rejected, UK
+Senior Programmer and Data Manager, Ricardo, https://careers-ricardo.icims.com/jobs/3147/senior-programmer-and-data-manager/candidate?from=login&csrf=2B2DBA98FBB963C7&hashed=-626006868&uploadResume=1&uploadResume=1, rejected, UK
+AI/ML Engineer, Forge Holiday Group, https://careers.forgeholidays.com/job/764826, rejected, UK
+Math Software Developer, Light & Wonder, https://lnw.wd5.myworkdayjobs.com/en-US/LightWonderExternalCareers/login, rejected, UK
+Graduate Software Engineer, Ashton Fire, https://ashtonfire.bamboohr.com/careers/50, rejected, UK
+Data Consultant, WSP, https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/fr-CA/sites/CX_2001/job/73871/?mode=location, rejected,  UK
+Mid Software Developer, Bentley Systems,https://career4.successfactors.com/portalcareer?_s.crb=H2fNdhGOn0ge2cdXhZH4HFYO4%252bhwC%252bhIX882uqKbh4c%253d,rejected,  UK
+ML Engineer, Netflix, https://explore.jobs.netflix.net/careers/search?query=%2A&pid=790303496227&domain=netflix.com&sort_by=relevance, rejected, UK
+Quantitative Researcher, Fuse Energy (Dubai), https://www.linkedin.com/jobs/search-results/?currentJobId=4231733769&eBP=NOT_ELIGIBLE_FOR_CHARGING&keywords=python%20developer&refId=ZbH3%2Bpr%2BqUzocguTYHAM0A%3D%3D&start=25&trackingId=JKz8p0XHd9p0DiL1rUUA6Q%3D%3D, ghosted, UK
+Reply Cortex, Graduate AI Software Engineer, https://career5.successfactors.eu/portalcareer?_s.crb=AoMGz8mNnD%252fpU8sI76K9lg12i5HckWdEMgdveNANst4%253d, ghosted, UK
+Full Stack AI Developer, JP Morgan Chase, https://... , rejected, UK
+Senior Data Scientist, Monzo, https://... , rejected, UK
+Assistant Manager (Model Validation Quant), Lloyds Banking Group, https://www.lloydsbankinggroup.com/careers/job-search/workday-job.148001.html, rejected, UK
 ML Engineer, Robert Walters Recruitment agency, https://www.robertwalters.co.uk/technologydigital/jobs/datascienceairesearch/1871864-machine-learning-engineer.html, applied, UK
 TypeForm, Sr. Machine Learning Enigneer, https://job-boards.greenhouse.io/typeform/jobs/7446908, applied, UK
 SignifyTechnologies, Deep Learning Engineer, https://www.signifytechnology.com/jobs/Deep-Learning-Engineer-19756/ , applied, UK
@@ -143,3 +143,7 @@ Manager - AI Engineer - AI Scaling and transformation - Engineering - AI & Data 
  Senior Research Associate, University of Essex, https://vacancies.essex.ac.uk/tlive_webrecruitment/wrd/run/etrec179gf.open?WVID=9918109NEm&LANG=USA, applied, UK
  AI Engineer, GLobalLogic, https://www.globallogic.com/careers/ai-engineer-irc302970/, applied, UK
  Machine Learning Engineer, Eneco, https://www.werkenbijeneco.nl/vacatures/machine-learning-engineer-energy-management-3063/bedankt, applied, Netherlands
+ Software Engineer (Back-End), Symphony, https://symphony.com/company/apply/?gh_jid=8021297,applied, UK
+ Software Engineer (AI Agents (Satori)), Proofpoint, https://symphony.com/company/apply/?gh_jid=8021297, applied, UK
+ Backend Software Engineer, Upwind Security, https://www.comeet.com/jobs/upwind/49.004/backend-software-engineer/BA.04E?coref=1.10.s07_945, applied, UK
+ Fullstack Software Engineer - Catering, Olo, https://jobs.lever.co/olo/76405841-45d3-434b-a7bd-141feebc61e3/apply?lever-source=LinkedIn, applied, UK
